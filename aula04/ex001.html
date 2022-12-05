@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html{
+            background-color: rgb(255, 68, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            
+            
+            
+        }
+        body h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            
+            text-align: center;
+            color: white;
+            
+        }
+        main{
+            background-color: rgb(241, 110, 58);
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+        
+           
+            
+        }
+        main::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 20px 0px 0px 20px;
+            background-color: rgb(71, 248, 1);
+            position: absolute;
+        }
+        p{
+            font-size: 2em;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+    <title>primeiro contato</title>
+</head>
+<body>
+    <main>
+        <div class="conteudo">
+            <h1>Hello world!</h1>
+            <p>Graças a deus pai me livrei da maldição</p>
+        </div>
+    </main>
+    <script>
+        window.alert('minha primeira mensagem'); /*estou fazendo um alerta*/
+        
+        var nome = window.prompt("qual é o seu nome ?") /*perguntando o nome da pessoa*/
+
+        window.alert("muito prazer " + nome)
+    </script>
+</body>
+</html>
