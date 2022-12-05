@@ -1,0 +1,16 @@
+@media screen and (min-width:400px) {
+    main{
+        height: 400px;
+        gap: 4px;
+        width: 350px;
+    }
+    body h1{
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width: 1200px){
+    main{
+        height: 400px;
+    }
+}

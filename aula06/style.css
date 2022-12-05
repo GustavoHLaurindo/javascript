@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+body, html{
+    background-color: #23272a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    
+    
+    
+}
+body h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    text-transform: capitalize;
+    text-align: center;
+    color: #5865f2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+main{
+    background-color: #2c2f33;
+    padding: 40px;
+    padding-bottom: 30px;
+    border-radius: 20px;
+    position: relative;
+    width: 50vw;
+    align-items: center;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+   
+    
+}
+main::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 20px 0px 0px 20px;
+    background-image: linear-gradient(to bottom, #5865f2, #7289da);
+    position: absolute;
+}
+p{
+    font-size: 2em;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #99aab5;
+    animation: piscar 3s  ease infinite;
+}
+a, i{
+    font-family: 'Concert One', cursive;
+    color: #ececec;
+    text-decoration: none;
+    font-size: 25px;
+    
+    
+}
+.pai-botao{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.botao{
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    padding: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: #5865f2;
+}
+@keyframes piscar{
+    
+    50%{
+        
+        color: #99aab5;
+        transform: translateY(-10px);
+    }
+    75%{
+        color: #99aab5;
+        transform: translateY(10px);
+    }
+    100%{
+        color: #6d97b2;
+        transform: translateY(0px);
+    }
+}
