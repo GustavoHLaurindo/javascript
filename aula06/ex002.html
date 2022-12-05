@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html{
+            background-color: rgb(255, 68, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            
+            
+            
+        }
+        body h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 4em;
+            text-transform: capitalize;
+            text-align: center;
+            color: white;
+            
+            
+        }
+       
+        main{
+            background-color: rgb(241, 110, 58);
+            padding: 40px;
+            border-radius: 20px;
+            position: relative;
+        
+           
+            
+        }
+        main::before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 20px 0px 0px 20px;
+            background-color: rgb(71, 248, 1);
+            position: absolute;
+        }
+        p{
+            font-size: 2em;
+            text-align: center;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            animation: piscar 6s infinite;
+        }
+        @keyframes piscar{
+            
+            50%{
+                color: rgb(174, 255, 0);
+                transform: translateY(-10px);
+            }
+            75%{
+                color: rgb(13, 223, 13);
+                transform: translateY(10px);
+            }
+            100%{
+                color: rgb(44, 216, 5);
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+    <title>primeiro contato</title>
+</head>
+<body>
+    <main>
+        <div class="conteudo">
+            <h1 id="titulo"></h1>
+            <p>Muito obrigado por entrar em minha pagina</p>
+        </div>
+    </main>
+    <script>
+        var nome = window.prompt("qual é o seu nome ?") //perguntando o nome da pessoa
+
+        document.getElementById('titulo').innerHTML = nome + ", Seja bem vindo";//aqui estou falando para o navegador que o valor que o nome recebeu vai modificar o titulo da pagina
+
+        window.alert("muito prazer " + nome + "!")
+    </script>
+</body>
+</html>
