@@ -6,8 +6,13 @@
     p{
         font-size: 1.2em;
     }
+    .botao{
+        flex-direction: column;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
     body h1{
-       font-size: 2.5em;
+       font-size: 2em;
     }
 }
 
@@ -16,6 +21,12 @@
         width: 50%;
         padding: 40px 70px 40px 70px;
         
+    }
+    .botao{
+        flex-direction: row;
+        padding-top: 4%;
+        gap: 10px;
+        padding-bottom: 4%;
     }
     p{
         font-size: 1.5em;
