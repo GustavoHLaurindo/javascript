@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: coral;
+            
+
+        }
+        #area{
+            background-color: rgb(43, 0, 93);
+            color: white;
+            width: 300px;
+            margin: auto;
+            height: 300px;
+            line-height: 300px;
+        }
+        p{
+            font-size: 40px;
+            text-align: center;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            font-style: italic;
+            color: beige;
+            user-select: none;
+        }
+    </style>
+    <title>Eventos dom</title>
+</head>
+<body >
+    <div id="area">
+        <p>Interaja...</p>
+    </div>
+    <script>
+       var caixa = document.getElementById("area")
+       var texto = document.getElementsByTagName('p')[0]
+       caixa.addEventListener('click', clicou)
+       caixa.addEventListener('mouseenter' , entrou)
+       caixa.addEventListener('mouseout', saiu)
+
+       function clicou(){
+        texto.innerText = "clicou agora!"
+        texto.style.color = "white"
+       }
+       
+       function entrou(){
+        texto.innerText = "entrou!"
+        texto.style.color = "white"
+       }
+
+       function saiu(){
+        texto.innerText = "saiu!"
+        texto.style.color = "red"
+       }
+    </script>
+</body>
+</html>

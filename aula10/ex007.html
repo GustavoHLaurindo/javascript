@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body,html{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 100%;
+            align-items: center;
+            background-image: linear-gradient(35deg,blue, rgb(1, 106, 233),rgb(174, 0, 174), purple);
+            height: 100vh;
+        }
+        h1{
+            font-size: 50px;
+            text-align: center;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+
+        }
+        input{
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.59);
+            
+        }
+        form input[type=number]{
+            border-radius: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            font-size: 18pt;
+            text-align: center;
+        }
+        form input[type=button]{
+            border: none;
+            border-radius: 20px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 20px;
+            padding: 10px 50px;
+            margin-top: 10px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .soma{
+            font-size: 18pt;
+            text-align: center;
+        }
+    </style>
+    <title>somando números</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Calculadora</h1>
+            <form action="">
+                <input type="number" name="numero1" id="numero1" required="required" placeholder="Digite primeiro número">
+                <span>+</span>
+                <input type="number" name="numero2" id="numero2" required="required" placeholder="Digite segundo número" >
+                <input type="button" value="Somar" onclick="somar()">
+            </form>
+            <div class="soma"></div>
+        </section>
+    </main>
+
+    <script>
+        function somar(){
+            var numero1 = document.getElementById('numero1')
+
+            var numero2 = document.getElementById('numero2')
+
+            var resultado = document.getElementsByClassName('soma')[0]
+
+            var n1 = Number(numero1.value)
+
+            var n2 = Number(numero2.value)
+
+            var soma = n1 + n2
+            resultado.innerHTML = `O resultado de <strong>${n1}</strong> + <strong>${n2}</strong> é de <strong>${soma}</strong>`
+            
+        }
+    </script>
+</body>
+</html>
