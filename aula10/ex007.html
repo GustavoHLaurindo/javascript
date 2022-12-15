@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
         body,html{
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
@@ -18,6 +19,8 @@
         h1{
             font-size: 50px;
             text-align: center;
+            font-family: 'Silkscreen', cursive;
+           
         }
         form{
             display: flex;
@@ -25,6 +28,12 @@
             gap: 10px;
             align-items: center;
 
+        }
+        span{
+            font-size: 30px;
+            font-weight: 800;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
         }
         input{
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.59);
@@ -63,28 +72,25 @@
                 <input type="number" name="numero1" id="numero1" required="required" placeholder="Digite primeiro número">
                 <span>+</span>
                 <input type="number" name="numero2" id="numero2" required="required" placeholder="Digite segundo número" >
-                <input type="button" value="Somar" onclick="somar()">
+                <input type="button" value="Somar" id="botao" >
             </form>
             <div class="soma"></div>
         </section>
     </main>
 
     <script>
-        function somar(){
-            var numero1 = document.getElementById('numero1')
+        var botao = document.getElementById("botao")
+        botao.addEventListener('click', clicou)
+       function clicou(){
+        var texto = document.querySelector("div.soma")
+        var input1 = document.getElementById("numero1")
+        var input2 = document.getElementById("numero2")
+        var n1 = Number(input1.value)
+        var n2 = Number(input2.value)
+        var resultado = n1 + n2
+        texto.innerHTML = `O resultado de ${n1} + ${n2} = ${resultado}`
 
-            var numero2 = document.getElementById('numero2')
-
-            var resultado = document.getElementsByClassName('soma')[0]
-
-            var n1 = Number(numero1.value)
-
-            var n2 = Number(numero2.value)
-
-            var soma = n1 + n2
-            resultado.innerHTML = `O resultado de <strong>${n1}</strong> + <strong>${n2}</strong> é de <strong>${soma}</strong>`
-            
-        }
+       }
     </script>
 </body>
 </html>
