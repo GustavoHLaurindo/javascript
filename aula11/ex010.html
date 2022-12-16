@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+    <title>DETRAN</title>
+</head>
+<body>
+    <H1>Sistema de multas</H1>
+    <label for="textov">Velocidade o carro:</label>
+    <input type="number" name="textov" id="textov">
+    <input type="button" value="Verificar" id="botao">
+    <div id="resultado">
+
+    </div>
+    <script>
+        var botao = document.querySelector("input#botao")
+        botao.addEventListener("click", clicou)
+        function clicou(){
+            var velocidade = document.querySelector("input#textov")
+            var resultado = document.querySelector("div#resultado")
+            var rvelocidade = Number(velocidade.value)
+            if (rvelocidade > 60){
+                resultado.innerHTML = `<p>sua velocidade atual é de <strong>${rvelocidade}km/h</strong><br>o limite é de <strong>60 km/h</strong> <br>você passou a <strong>${rvelocidade} Km/h</strong> você foi multado!</p>`
+                resultado.innerHTML += `<p>dirija sempre com cinto de segurança</p>`
+            }else{
+                resultado.innerHTML = `<p>sua velocidade atual é de <strong>${rvelocidade}km/h</strong> </p>`
+                resultado.innerHTML += `<p>dirija sempre com cinto de segurança</p>`
+            }
+            
+        }
+    </script>
+</body>
+</html>
