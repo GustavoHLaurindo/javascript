@@ -3,34 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#F39C12">
     <style>
-        body,html{
-            background-color: gray;
-            font-family: Arial, Helvetica, sans-serif;
+        body{
             margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            justify-content: start;
+            background-color: rgb(255, 123, 0);
+            align-items: center;
+        }
+        header{
+            background-color: rgba(128, 128, 128, 0.597);
+            height: 80px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            padding: 10px;
+            border: 2px solid #525252;
+            
+        }
+        header h1{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            line-height: 79px;
+            margin-top: 0px;
+           
+            margin-bottom: 0px;
         }
         main{
-            background-color: rgb(255, 255, 255);
-            width: 100vw
-
+            background: rgba(239, 251, 251, 0.686);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.436);
+            padding: 20px 20px;
+            width: 500px;
+            height: 355px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: inset 0px -1px 20px 0px rgba(0, 0, 0, 0.368);
+            transition: width 1.5s ;
         }
         
+        #hora p{
+            font-size: 30px;
+            margin: 10px 0px;
+            color: rgb(0, 0, 0);
+            font-weight: 700;
+        }
+        footer p{
+            color: white;
+            font-size: 20px;
+        }
+        @media screen and (max-width:552px){
+            main{
+                width: 345px;
+                height: 365px;
+            }
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horario</title>
 </head>
-<body>
+<body onload="carregou()">
     <header>
         <h1>Horario do dia </h1>
     </header>
     <main>
         <section class="principal">
             <div id="hora">
-                <h1>agora são 10 horas</h1>
+                
             </div>
-            <div id="imagem">ola</div>
+        
+            <div id="imagem">
+                <img src="imagens/manha.png" id='imagem' width="400px" alt="">
+            </div>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; Gustavo Henrique</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
