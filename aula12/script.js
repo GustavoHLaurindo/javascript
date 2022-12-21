@@ -6,7 +6,7 @@ function carregou(){
     var hora = agora.getHours()
     var minuto = agora.getMinutes()
     mensagem.innerHTML = `<p>Agora são ${hora} horas<br> e ${minuto} minutos</p>`
-    
+    hora = 17
     if (hora >= 0 && hora < 12 ){
 
         img.setAttribute('src', 'imagens/manha.png');

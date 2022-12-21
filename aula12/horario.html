@@ -11,15 +11,15 @@
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             flex-direction: column;
-            background-size: cover;
+            background-size: 200vh;
+            background-repeat: no-repeat;
             background-position: center;
             height: 100vh;
             background-color: rgb(255, 123, 0);
             align-items: center;
         }
         header{
-            background-color: rgba(128, 128, 128, 0.597);
-            height: 80px;
+            background-color: rgba(128, 128, 128, 0.786);
             margin-top: 20px;
             margin-bottom: 20px;
             border-radius: 15px;
@@ -30,10 +30,8 @@
         header h1{
             text-align: center;
             color: white;
-            font-size: 50px;
-            line-height: 79px;
+            font-size: 45px;
             margin-top: 0px;
-           
             margin-bottom: 0px;
         }
         main{
@@ -41,9 +39,8 @@
             box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
             border-radius: 10px;
             border: 1px solid rgba(255, 255, 255, 0.436);
-            padding: 20px 20px;
-            width: 500px;
-            height: 355px;
+            padding: 0px 20px;
+            
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -53,7 +50,7 @@
             transition: width 1.5s ;
         }
         #imagem{
-            width: 350px;
+            width: 410px;
             
         }
         #imagem-pai{
@@ -72,12 +69,12 @@
             font-size: 20px;
         }
         @media screen and (max-width:552px){
-            main{
-                width: 316px;
-                height: 365px;
-            }
             header{
                 margin-top: 0px;
+                padding: 10px;
+            }
+            header h1{
+                letter-spacing: 1px;
             }
             #imagem{
                width: 300px;
