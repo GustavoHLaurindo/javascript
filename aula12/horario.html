@@ -49,10 +49,18 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            border-radius: 20px;
+            
             box-shadow: inset 0px -1px 20px 0px rgba(0, 0, 0, 0.368);
             transition: width 1.5s ;
         }
+        #imagem{
+            width: 350px;
+            
+        }
+        #imagem-pai{
+            width: 100%;
+        }
+
         
         #hora p{
             font-size: 30px;
@@ -66,8 +74,14 @@
         }
         @media screen and (max-width:552px){
             main{
-                width: 345px;
+                width: 316px;
                 height: 365px;
+            }
+            header{
+                margin-top: 0px;
+            }
+            #imagem{
+               width: 300px;
             }
         }
     </style>
@@ -84,8 +98,8 @@
                 
             </div>
         
-            <div id="imagem">
-                <img src="imagens/manha.png" id='imagem' width="400px" alt="">
+            <div id="imagem-pai">
+                <img src="imagens/manha.png" id='imagem' alt="">
             </div>
         </section>
     </main>
