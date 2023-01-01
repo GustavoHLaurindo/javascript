@@ -9,7 +9,7 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
-    background-color: rgb(0, 115, 255);
+    background: linear-gradient(rgb(0, 179, 255), #08124a);
     align-items: center;
 }
 header{
