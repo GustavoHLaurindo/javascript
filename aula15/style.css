@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
-body{
+body,html{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+    height: 120vh; 
     background: linear-gradient(rgb(0, 179, 255), #08124a);
     align-items: center;
 }
