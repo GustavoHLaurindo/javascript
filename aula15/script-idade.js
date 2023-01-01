@@ -9,7 +9,7 @@ botao.addEventListener("click", clicou)//escuta o evento de click no botão
 function clicou(){//assim que clicar no botão faça essa função
     var ano = Number(nascimento.value)//pega o valor digitado no input
     
-    if (ano.toString().length < 4 || ano > ano_atual ){//se o valor digitado no input for menor que 4
+    if (ano.toString().length < 4 || ano > ano_atual || radiof.checked == false && radiom.checked == false){//se o valor digitado no input for menor que 4
         window.alert("verifique os dados :)")
     }else{
         var idade = ano_atual - ano
