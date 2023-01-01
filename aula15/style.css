@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-color: rgb(0, 115, 255);
+    align-items: center;
+}
+header{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+   
+    
+}
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+main{
+    background: rgba(239, 251, 251, 0.686);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.436);
+    padding: 20px 20px;
+    box-shadow: inset 0px -1px 20px 0px rgba(0, 0, 0, 0.368);
+    transition: all 1.5s ;
+    margin: 10px;
+}
+label{
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    font-family: Dosis;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+.data{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#nascimento{
+    height: 28px;
+    border: none;
+    border-radius: 30px;
+    font-size: 20px;
+    text-align: center;
+    
+}
+input[type="radio"]{
+    height: 1.2rem;
+    width: 1.2rem;
+    
+}
+.pai-botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data{
+    margin-bottom: 18px;
+}
+input#botao{
+    border-radius: 20px;
+    border: none;
+    padding: 13px 67px;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg, #03a9f4, #004bd3, #006381, #03a9f4
+    );
+    -moz-appearance: textfield;
+    appearance: textfield;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    font-size: 15px;
+    background-size: 400%;
+    cursor: pointer;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+   
+}
+input#botao:before{
+     content: '';
+     position: absolute;
+     top: -5px;
+     Left: -5px;
+     right: -5px;
+     bottom: -5px;
+     z-index: -1;
+     background: linear-gradient(98deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+     background-size: 400%;
+     border-radius: 40px;
+
+}
+  
+.res p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+.res{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    color: white;
+    font-size: 20px;
+}
+@media screen and (max-width:552px){
+    
+    header h1{
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+    main{
+        padding: 15px 25px;
+        margin: 10px;
+        
+    }
+    form{
+        gap: 10px;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input#botao{
+        width: 100%;
+    }
+}
