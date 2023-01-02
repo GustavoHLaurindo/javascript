@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
-body,html{
+body{
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +8,7 @@ body,html{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 120vh; 
+    height: 128vh; 
     background: linear-gradient(rgb(0, 179, 255), #08124a);
     align-items: center;
 }
@@ -133,7 +133,11 @@ footer p{
     font-size: 20px;
 }
 @media screen and (max-width:552px){
-    
+    body{
+        height: 100vh;
+        background-image: none;
+        background-color: rgb(3, 162, 230);
+    }
     header h1{
         letter-spacing: 1px;
         font-size: 40px;
