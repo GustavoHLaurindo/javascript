@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(6, 154, 218);
+}
+header{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    padding: 10px;
+   
+    
+}
+header h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+main{
+    background: rgba(239, 251, 251, 0.686);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.436);
+    padding: 30px 30px;
+    box-shadow: inset 0px -1px 20px 0px rgba(0, 0, 0, 0.368);
+    transition: all 0.5s ;
+    margin: 10px;
+    max-width: 500px;
+}
+label{
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    font-family: Dosis;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+}
+input[type=number]{
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.pai-botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input#botao{
+    border-radius: 20px;
+    border: none;
+    padding: 13px 67px;
+    margin-top: 20px;
+    background-image: linear-gradient(90deg, #03a9f4, #004bd3, #006381, #03a9f4
+    );
+    
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    background-size: 400%;
+    cursor: pointer;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+   
+}
+input#botao:before{
+     content: '';
+     position: absolute;
+     top: -5px;
+     Left: -5px;
+     right: -5px;
+     bottom: -5px;
+     z-index: -1;
+     background: linear-gradient(98deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+     background-size: 400%;
+     border-radius: 40px;
+
+}
+p,span,.res{
+    
+    font-size: 20px;
+    font-family: Dosis;
+    font-weight: 700;
+}
+span{
+    margin-top: 10px;
+}
+.res{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+
+
