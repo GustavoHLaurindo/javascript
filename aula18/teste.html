@@ -1,28 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
-</head>
+<html>
+  <style>
+    body{
+      font-family: arial;
+    }
+    table{
+      border-collapse: collapse;
+      width: 500px;
+    }
+    thead{
+      background-color: gray;
+      color: white;
+    }
+    td,th{
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 <body>
 
-    <button type="submit" id="botao">olá</button>
-    
-    <script>
-        var botao = document.getElementById("botao")
-        botao.addEventListener("click", clicou)
-        function clicou(){
-        swal({
-      
-        title: "Erro",
-        text: "impossivel passo 0 consideramos 1",
-        icon: "error",
-   
-    });
-        }
-    </script>
+  
+
+<script>
+  var corpo = document.body
+  var tabela = document.createElement("table")
+  var titulo = document.createElement("thead")
+  var linha = document.createElement("tr")
+  var linha2 = document.createElement("tr")
+  var th = document.createElement("th")
+  var th2 = document.createElement("th")
+  var th3 = document.createElement("th")
+  var dado1 = document.createElement("td")
+  var dado2 = document.createElement("td")
+  var dado3 = document.createElement("td")
+  var tabela_corpo = document.createElement("tbody")
+  corpo.appendChild(tabela)
+  tabela.appendChild(titulo)
+  tabela.appendChild(tabela_corpo)
+  tabela_corpo.appendChild(linha2)
+  titulo.appendChild(linha)
+  th.textContent = "Estado"
+  th2.textContent = "Pais"
+  th3.textContent = "Cidade"
+  dado2.textContent = "Paraná"
+  dado3.textContent = "primeiro de maio"
+  dado1.textContent = "Brasil"
+  linha.appendChild(th2)
+  linha.appendChild(th)
+  linha.appendChild(th3)
+  linha2.appendChild(dado1)
+  linha2.appendChild(dado2)
+  linha2.appendChild(dado3)
+  
+  
+  
+  
+
+</script>
 </body>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </html>

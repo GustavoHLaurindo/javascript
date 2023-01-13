@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #36393F;
+            margin: 0px;
+        }
+        #titulo h1{
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        button{
+            padding: 18px 60px;
+            background-color: chocolate;
+            color: white;
+            font-size: 50px;
+            border: none;
+            border-radius: 20px;
+        }
+        #res{
+            text-align: center;
+            font-size: 25px;
+            background-color: goldenrod;
+            height: 300px;
+            width: 400px;
+            overflow-y: auto;
+            border-radius: 20px;
+        }
+        #conteudo{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        #conteudo-principal{
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        #res h1{
+            font-size: 18px;
+        }
+        
+    </style>
+    
+    <title>titulo</title>
+</head>
+<body>
+    <div id="titulo">
+        <h1>Convidados</h1>
+    </div>
+    <div id="conteudo">
+        <div id="conteudo-principal">
+            <button type="submit" id="botao-comeca">Enviar</button>
+            <button type="submit" id="botao-adiciona">Adicionar</button>
+            <div id="res">
+                Aqui irá aparecer os convidados
+            </div>
+        </div>
+    </div>
+    <script src="função02.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
